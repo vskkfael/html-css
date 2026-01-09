@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 { /* box-level*/
+            display: flex;
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border: 10px solid darkslategray;
+            padding: 10px;
+
+            justify-content: center;
+            align-items: center;
+
+            margin: auto;
+
+            outline: 5px groove black
+        }
+        
+        h1:hover {
+            background-color: bisque;
+            color: brown;
+            border-color: black;
+        }
+
+        a {
+            border: 10px double red;
+        }
+
+        /* Configuração do <a> */
+        .link:hover {
+            background-color: darkorange;
+            color: blueviolet;
+            width: 300px;
+        }
+        
+        .link {
+            font-size: 35px;
+            color: black;
+            border: none;
+            text-align: center;
+        }
+
+
+        /* Configuração Emotion Começo/Final */
+        .link::before {
+            content: '©';
+        }
+
+        .link::after {
+            content: '©';
+        }
+
+        .link:active {
+            color: yellow;
+        }
