@@ -6,19 +6,20 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url("imagens/espaco.jpg");
+section#espaco {
+    background-image: url('imagens/espaco.jpg');
     background-size: 100% 100%;
+    background-size: cover;
 
     position: relative;
     height: 100vh;
-
 }
 
-#astronauta {
-    background-size: 100% 100%;
+div#astronauta {
+    background-position: 100% 100%;
 
     position: absolute;
+
     left: 50%;
     top: 50%;
 
