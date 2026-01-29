@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        td#espanha {
+            background-image: url('bandeira-da-espanha-oficial.jpg');
+            background-repeat: repeat-x;
+            background-size: contain;
+
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        td#ibiza {
+            background-image: url('Ibiza_flag.svg.png');
+            background-size: contain;
+            background-position: center top;
+
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        td#portugal {
+            background-image: url('bandeira-portugal-2.webp');
+            background-position: center center;
+            background-size: cover;
+
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 8px black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+        <table>
+            <tr>
+                <td id="espanha">Espanha</td>
+                <td colspan="2" id="ibiza">Ibiza</td> <!--Espação de Coluna Collun Spancion-->
+            </tr>
+            <tr>
+                <td rowspan="3" id="portugal">Portugal</td>
+                <td>E</td>
+                <td rowspan="2">F</td>
+            </tr>
+            <tr>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td colspan="2">M</td>
+            </tr>
+        </table>
+</body>
+</html>
