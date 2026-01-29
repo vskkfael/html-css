@@ -39,26 +39,26 @@
     <table>
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplina</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Médias</th>
+                <th rowspan="2" scope="row">Área</th>
+                <th rowspan="2" scope="row">Disciplina</th>
+                <th colspan="2" scope="rowgroup">Notas</th>
+                <th rowspan="2" scope="row">Médias</th>
             </tr>
             <tr>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
+                <th scope="row">Nota 1</th>
+                <th scope="row">Nota 2</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="colgroup">Exatas</th>
                 <td>Matemática</td>
                 <td class="num">0.0</td>
                 <td class="num">0.0</td>
                 <td class="num">0.0</td>
             </tr>
             <tr>
-                <td class="num">Física</td>
+                <td>Física</td>
                 <td class="num">0.0</td>
                 <td class="num">0.0</td>
                 <td class="num">0.0</td>
@@ -76,11 +76,11 @@
                 <td class="num">0.0</td>
             </tr>
             <tr>
-                <th colspan="4" class="grifo">Média de Exatas</th>
+                <th colspan="4" class="grifo" scope="col">Média de Exatas</th>
                 <td class="grifo + num">0.0</td>
             </tr>
             <tr>
-                <th rowspan="2">Humanas</th>
+                <th rowspan="2" scope="colgroup">Humanas</th>
                 <td>História</td>
                 <td class="num">0.0</td>
                 <td class="num">0.0</td>
@@ -93,7 +93,7 @@
                 <td class="num">0.0</td>
             </tr>
             <tr>
-                <th colspan="4" class="grifo">Média de Humanas</th>
+                <th colspan="4" class="grifo" scope="col">Média de Humanas</th>
                 <td class="grifo + num" >0.0</td>
             </tr>
         </tbody>
