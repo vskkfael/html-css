@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+    :root {
+        --cor1: #f8f9fa;
+        --cor2: #e9ecef;
+        --cor3: #dee2e6;
+        --cor4: #495057;
+        --cor5: #343a40;
+        --cor6: #212529;
+        --cor7: #ffffff9a;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        height: 100vh;      
+        
+    }
+
+    a {
+        color: gray;
+        text-decoration: none;
+        font-weight: normal;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        opacity: 0.7;
+    }
+
+    .logo {
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #343a40;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif, Arial, sans-serif;
+        background: var(--cor7);
+        height: 8vh;
+        
+    }
+
+    .nav-list {
+        display: flex;
+        list-style: none;
+    }
+
+    .nav-list li {
+        margin-left: 32px;
+    }
+
+    .btn-comecar {
+        background-color: #155DFC;
+        padding: 10px 25px;
+        border-radius: 8px;
+        list-style: none;
+    }
+
+    .btn-comecar a {
+        color: rgb(255, 255, 255);
+    }
+
+    main {
+        background-image: url(christopher-gower-m_HRfLhgABo-unsplash.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 92vh;
+    }
+
+    div.principal {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        color: white;
+
+    }
+
+    .principal h1 {
+        font-size: 10vh;
+    }
+
+    .principal p {
+        font-size: 25px;
+    }
+
+
+
+    
+    
