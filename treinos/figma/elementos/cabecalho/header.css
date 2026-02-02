@@ -1,0 +1,54 @@
+.header {
+        position: sticky;
+        top: 0;
+        z-index: 99;
+    }
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bolder;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        opacity: 0.7;
+    }
+
+    .logo {
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #ffffff;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #000000ec;
+        height: 8vh;
+        
+    }
+
+    .nav-list {
+        display: flex;
+        list-style: none;
+        font-size: 1em;
+    }
+
+    .nav-list li {
+        margin-left: 15px;
+    }
+
+    .btn-comecar {
+        background-color: #155DFC;
+        padding: 10px 20px;
+        border-radius: 8px;
+        list-style: none;
+    }
+
+    .btn-comecar a {
+        color: rgb(255, 255, 255);
+        font-size: 1.2em;
+    }
