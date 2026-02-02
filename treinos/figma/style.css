@@ -83,21 +83,25 @@
         background-image: url("imagens/fundo.png");
         background-position: center center;
         background-size: cover;
-        height: 92vh;
+        height: 98vh;
     }
 
     div.principal {
         position: absolute;
+
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
 
+        transform: translate(-50%, -50%);
         color: white;
 
     }
 
     .principal h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         font-size: 5em;
         text-shadow: 1px 1px 2px black;
     }
@@ -110,34 +114,34 @@
     }
 
     .principal a {
-        padding: 10px 25px;
+        padding: 15px 35px;
         border-radius: 8px;
         list-style: none;
     }
 
     .links {
-        margin-top: 100px;
-    }
-
-    .links > a {
-        margin-right: 25px;
-        padding: 20px 25px;
-        font-size: 20px;
-
-        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
     }
 
     .comecar {
-    background-color: #155DFC;
+        background-color: #155DFC;
+        margin: 15px;;
+    
     }
 
     .saiba {
         background-color: rgba(0, 0, 0, 0.623);
-        border: 3px solid rgba(128, 128, 128, 0.562);
+        border: 3px solid rgba(128, 128, 128, 
+        0.562);
+        margin: 15px;
+
     }
     /* Nossos Recursos */
     aside {
-        height: 50vh;
+
     }
 
     .recursos {
@@ -155,15 +159,16 @@
         font-size: 1em;
     }
 
-    .blocos {
+    .container-block {
         display: flex;
-        align-items: center;
+        flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
 
-    .blocos img {
-        height: 35px;
-        width: 35px;
+    .container-block img {
+        height: 40px;
+        width: 40px;
         background-color: #155DFC;
         padding: 5px;
         margin-bottom: 10px;
@@ -171,12 +176,14 @@
     }
 
     .energia {
+        flex-grow: 1;
+        flex-basis: 200;
         background-color: rgb(248, 248, 248);
         padding: 27px 30px;
         border-radius: 10px;
         text-align: left;
-        width: 300px;
-        margin: 80px;
+        max-width: 300px;
+        margin: 40px;
         box-shadow: 1px 1px 10px #0000004f;
     }
 
@@ -203,11 +210,14 @@
     }
 
     .seguro {
+        flex-grow: 1;
+        flex-basis: 200;
         background-color: rgb(248, 248, 248);
         padding: 27px 30px;
         border-radius: 10px;
         text-align: left;
-        width: 300px;
+        max-width: 300px;
+        margin: 40px;
         box-shadow: 1px 1px 10px #0000004f;
     }
 
@@ -234,11 +244,14 @@
     }
 
     .flex {
+        flex-grow: 1;
+        flex-basis: 200;
         background-color: rgb(248, 248, 248);
         padding: 27px 30px;
         border-radius: 10px;
         text-align: left;
-        margin: 80px;
+        margin: 40px;
+        max-width: 300px;
         box-shadow: 1px 1px 10px #0000004f;
     }
 
@@ -282,7 +295,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 3em;
+        font-size: 4em;
         padding-top: 50px;
     }
     
@@ -290,14 +303,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 1.5em;
     
     }
 
     .lateral {
         display: flex;
+        align-items: center;
         justify-content: space-around;
-        height: 50vh;
-        margin-top: 100px;
+        margin-top: 30px;
 
     }
 
@@ -377,7 +391,7 @@
     #box4 {
         background-color: #fcfbfb;
         box-shadow: 1px 1px 10px #00000073;
-        padding: 40px 94px;
+        padding: 40px 70px;
         border-radius: 10px;
         text-align: center;
         margin: 15px;
@@ -405,18 +419,105 @@
 
     /* RESPONSIVO */
     @media (max-width: 768px){
+
+
+        .principal h1 {
+            font-size: 4em;
+        }
+
+        .principal {
+            font-size: 1em;
+        }
+
+
         .nav-list {
             font-size: 0.8em
         }
 
         .nav-list a {
-            font-size: 1em;
+            display: none;
+            font-size: 0.8em;
         }
 
-        .blocos {
+        .container-block {
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
+            margin-bottom: 20px;
         }
+
+        .energia {
+            margin: 15px;
+        }
+
+        .seguro {
+            margin: 15px;
+        }
+
+        .flex {
+            margin: 15px;
+        }
+
+        .lateral {
+            flex-direction: column;
+        }
+
+        .text-lateral {
+            width: 80%;
+        }
+
+        .text-lateral p {
+            text-align: justify;
+        }
+
+        .btn-historia {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .recursos h2 {
+            font-size: 3em;
+        }
+
+        .recursos p {
+            padding-bottom: 30px;
+        }
+
+        .links {
+            flex-direction: column;
+            margin: 0px;
+            
+        }
+
+        .boxtop {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .boxtop div {
+            width: 50%;
+        }
+
+        .boxdown {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .boxdown div {
+            width: 50%;
+        }
+
+        .container-box {
+            width: 100%;
+        }
+
     }
+
+    @media (max-width: 768px){
+        
+    } 
