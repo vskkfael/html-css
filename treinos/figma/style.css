@@ -20,7 +20,7 @@
 
     /* Cabeçalho */
     body {   
-        overflow-x: hidden;
+
     }
 
     header {
@@ -59,10 +59,11 @@
     .nav-list {
         display: flex;
         list-style: none;
+        font-size: 1em;
     }
 
     .nav-list li {
-        margin-left: 32px;
+        margin-left: 15px;
     }
 
     .btn-comecar {
@@ -74,6 +75,7 @@
 
     .btn-comecar a {
         color: rgb(255, 255, 255);
+        font-size: 1.2em;
     }
 
     /* Conteúdo Principal */
@@ -248,4 +250,21 @@
         background-color: #155DFC;
     }
     
-    /**/
+    /* RESPONSIVO */
+    @media (max-width: 650px){
+        .nav-list {
+            font-size: 0.8em
+        }
+
+        .nav-list a {
+            font-size: 1em;
+        }
+
+        .blocos {
+            display: inline-block
+        }
+
+        .seguro {
+            
+        }
+    }
