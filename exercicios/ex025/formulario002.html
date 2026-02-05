@@ -13,13 +13,13 @@
 <body>
     <h1>Teste de formulário</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
-        <div class="">
+        <div class="user-data">
             <label for="iuser">Usuário: </label>
             <input type="text" name="user" id="iuser" required minlength="5" maxlength="15" size="20" placeholder="User" autocomplete="username">
         </div>
-        <div>
+        <div class="pass-data">
             <label for="ipassaword">Senha:</label>
-            <input type="password" name="passaword" id="ipassaword" required minlength="8" maxlength="20" size="20" placeholder="Password" autocomplete="new-password">
+            <input type="password" name="passaword" id="ipassaword" required minlength="8" maxlength="20" size="20" placeholder="Password" autocomplete="current-password">
         </div>
         <div>
             <input type="submit" value="Enviar">
