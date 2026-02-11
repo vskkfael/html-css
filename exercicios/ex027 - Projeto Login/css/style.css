@@ -76,7 +76,7 @@ div#formulario > p {
 
     border-radius: 5px;
     margin: 5px;
-    width: 192px;
+    width: 200px;
 }
 
 input {
@@ -89,5 +89,8 @@ input {
 
 .material-symbols-outlined {
     color: white;
-    margin-left: 5px;
+    margin-left: 10px;
+
+    position: relative;
+    right: 5px;
 }
