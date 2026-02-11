@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./css/media-query.css">
     <title>Login</title>
 </head>
+
 <body>
     <main>
         <section id="login">
@@ -16,26 +18,37 @@
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente, Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <p>Seja bem-vindo(a) novamente, Faça login para acessar sua conta e poder fazer as configurações no seu
+                    ambiente.</p>
                 <form action="login.php" method="post">
                     <div class="campo">
-                        <span class="material-symbols-outlined">person</span>
-                        <input type="email" name="login" id="ilogin" placeholder="seuemail@gmail.com" autocomplete="email" required max="30">
-                        <label for="ilogin">Login</label>
+                        <span class="material-symbols-outlined" id="ilogin" >person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="seuemail@gmail.com"
+                            autocomplete="email" required max="30">
+                        <label for="ilogin"></label>
                     </div>
+
                     <div class="campo">
                         <span class="material-symbols-outlined">vpn_key</span>
-                        <input type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password" required minlength="8" maxlength="20">
-                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" placeholder="Senha"
+                            autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha"></label>
                     </div>
+
                     <div>
                         <input type="submit" value="Enviar">
                         <a href="#">Esqueci a Senha</a>
                         <span class="material-symbols-outlined">mail</span>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="remember" id="iremember">
+                        <label for="irembember">Lembrar Senha</label>
                     </div>
                 </form>
             </div>
         </section>
     </main>
 </body>
+
 </html>
