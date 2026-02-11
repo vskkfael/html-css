@@ -39,8 +39,8 @@ section#login {
     overflow: hidden;
 
     background-color: #ffffff;
-    width: 250px;
-    height: 500px;
+    width: 300px;
+    height: 550px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
@@ -69,6 +69,14 @@ div#formulario > p {
     font-size: 0.8em;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .campo {
     display: flex;
     background-color: var(--cor-lilas);
@@ -76,14 +84,15 @@ div#formulario > p {
 
     border-radius: 5px;
     margin: 5px;
-    width: 200px;
+    width: 240px;
 }
 
 input {
     margin: auto;
-    height: 24px;
     border-radius: 5px;
     border: none;
+    height: 35px;
+    width: 230px;
     padding: 5px;
 }
 
@@ -93,4 +102,46 @@ input {
 
     position: relative;
     right: 5px;
+    top: 3px;
+}
+
+.btn {
+    display: flex;
+    flex-flow: column wrap; 
+    margin: 5px;
+
+        #btn-enter {
+            color: white;
+            background-color: #63cbc8;
+            width: 240px;
+            height: 30px;
+
+            text-align: center;
+}
+
+        a {
+            text-decoration: none;  
+            margin: 3px;
+            color: #489390;
+            font-weight: 350;
+}
+
+        .btn-b, .btn-c {
+            margin: 6px;
+        }
+
+        .btn-b {
+            display: flex;
+            text-align: center;
+            border: 2px solid #63cbc8;
+            border-radius: 5px;
+            font-size: 0.9em;
+            justify-content: center;
+            width: 240px;
+            height: 30px;
+
+        span {
+            color: black;
+    }
+}
 }
