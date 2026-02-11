@@ -34,12 +34,19 @@ TV: 1536px
     }
 
     div#formulario > h1 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     div#formulario > p {
         font-size: 1.2em;
+        text-align: justify;
     }
+
+    form {
+        display: flex;
+        transform: translate(0%, 50%);
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
