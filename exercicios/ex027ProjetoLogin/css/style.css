@@ -129,6 +129,7 @@ input {
             margin: 3px;
             color: #489390;
             font-weight: 350;
+            cursor: pointer;
 }
 
         .btn-b, .btn-c {
@@ -145,8 +146,15 @@ input {
             width: 290px;
             height: 30px;
 
-        span {
-            color: black;
+                &:hover {
+                    background-color: #53adaa;
+                    border: 2px solid #418784;
+                }
+
+                &:hover a {
+                    color: white;
+                }
+
+
     }
-}
 }
